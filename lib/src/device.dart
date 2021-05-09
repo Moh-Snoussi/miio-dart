@@ -73,7 +73,7 @@ class MiIoDevice {
   /// Call method on device.
   Future<List<dynamic>> call(
     String method, [
-    List<dynamic> params = const <dynamic>[],
+    dynamic params = const <dynamic>[],
   ]) async {
     final resp = await MiIo.instance.send(
       address,
